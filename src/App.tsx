@@ -14,25 +14,61 @@ const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="content">
-      <Heading level={1}>Rsbuild with React { theme }</Heading>
-      <Text>Start building amazing things with Rsbuild.</Text>
+    <div className="container is-fluid">
 
-      { Array.from({length:10}).map((item, idx) => (
-        <Card key={`${idx}-${item}`}>
-          <Heading level={1}>Hello World {++idx}</Heading>
+      <div className="header columns">
+        <div className="column is-9"></div>
+        <div className="column text-right">
+          Theme:
           <ButtonGroup>
-            <Button onClick={() => setIsModalOpen(true)}>Open Modal</Button>
-            <Button onClick={() => toggleTheme('light') }>light</Button>
-            <Button onClick={() => toggleTheme('dark') } variant="secondary">dark</Button>
+            <Button size="sm" onClick={() => toggleTheme('light') }>light</Button>
+            <Button size="sm" onClick={() => toggleTheme('dark') } variant="secondary">dark</Button>
           </ButtonGroup>
-        </Card>
-      ))}
+        </div>
+      </div>
+      <div className="columns">
+        <div className="column">
+          <Heading level={1}>Rsbuild with React { theme }</Heading>
+          <Text>Start building amazing things with Rsbuild.</Text>
+        </div>
+      </div>
 
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <Heading level={2}>Modal Title</Heading>
-        <Text>This is the content of the modal.</Text>
-      </Modal>
+      <div className="columns is-multiline">
+        <div className="column is-full">
+          <Card>
+            <Heading level={1}>Hello World</Heading>
+            <ButtonGroup>
+              <Button onClick={() => setIsModalOpen(true)}>Open Modal</Button>
+            </ButtonGroup>
+          </Card>
+
+          <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+            <Heading level={2}>Modal Title</Heading>
+            <Text>This is the content of the modal.</Text>
+          </Modal>
+        </div>
+        <div className="column is-full">
+          <div className="card">teste</div>
+        </div>
+        <div className="column">
+          <div className="card">teste</div>
+        </div>
+        <div className="column">
+          <div className="card">teste</div>
+        </div>
+        <div className="column">
+          <div className="card">teste</div>
+        </div>
+        <div className="column">
+          <div className="card">teste</div>
+        </div>
+        <div className="column">
+          <div className="card">teste</div>
+        </div>
+        <div className="column">
+          <div className="card">teste</div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import 'bulma/css/bulma.min.css';
 import './styles/themes/theme.css'
 import './styles/config.css'
+import './styles/helpers.css'
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import App from './App';
 import { ThemeProvider } from './components/ThemeProvider';
 
