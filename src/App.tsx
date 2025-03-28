@@ -6,9 +6,10 @@ import { Heading } from './components/Headings/Heading';
 import { useTheme } from './components/ThemeProvider/ThemeProvider';
 import { Text } from './components/Text';
 import { ButtonGroup } from './components/Button/Group';
-import { Modal } from './components/Modal';
 import { useState } from 'react';
 import { Tooltip } from './components/Tooltip/Tooltip';
+import { ScrollArea } from './components/ScrollArea/ScrollArea';
+import { Modal, ModalBody, ModalFooter, ModalHeader } from './components/Modal';
 
 const App = () => {
   const { theme, toggleTheme } = useTheme();
@@ -30,7 +31,7 @@ const App = () => {
       <div className="columns">
         <div className="column">
           <Tooltip text="This is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltip" position="bottom">
-            <Heading level={1}>Rsbuild with React</Heading>
+            <Heading level={1}>Rsbuild with React - { theme }</Heading>
           </Tooltip>
           <Text>Start building amazing things with Rsbuild.</Text>
         </div>
@@ -44,8 +45,21 @@ const App = () => {
           </Card>
 
           <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-            <Heading level={3}>Modal Title</Heading>
-            <Text>This is the content of the modal.</Text>
+            <ModalHeader>
+              <Heading level={3}>Modal Title</Heading>
+            </ModalHeader>
+            <ModalBody>
+              <ScrollArea maxHeight='200px'>
+                <Text>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!
+                </Text>
+              </ScrollArea>
+            </ModalBody>
+            <ModalFooter>
+              <Button onClick={() => setIsModalOpen(false)}>Close</Button>
+            </ModalFooter>
           </Modal>
         </div>
         <div className="column is-full">

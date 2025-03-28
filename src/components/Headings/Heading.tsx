@@ -15,7 +15,7 @@ export function Heading({
          {...props}
          className={`
             heading
-            heading-${level}
+            heading--${level}
             ${classes}
          `}
       >

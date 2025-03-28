@@ -28,7 +28,7 @@ export function Button({
          onMouseOut={handleMouseOut}
          onBlur={handleBlur}
          onClick={onClick}
-         aria-label={ariaLabel}
+         aria-label={ariaLabel ?? 'button'}
       >
          {children}
       </button>

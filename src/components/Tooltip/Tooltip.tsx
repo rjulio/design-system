@@ -11,7 +11,7 @@ export function Tooltip({
          aria-label={text}
          role="tooltip"
          data-tooltip-position={position}
-         className="tooltip-wrapper">
+         className="tooltip--wrapper">
          <span className="tooltip">{ text }</span>
          { children }
       </div>
