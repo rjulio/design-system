@@ -1,0 +1,69 @@
+.wizard{
+   display: flex;
+   flex-direction: column;
+
+   .steps-wrapper{
+      counter-reset: steps;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px 40px;
+
+      .step{
+         align-items:center;
+         border-radius: 50%;
+         cursor: pointer;
+         display: flex;
+         flex: 0 0 auto;
+         height: 32px;
+         justify-content: center;
+         overflow: hidden;
+         position: relative;
+         width: 32px;
+
+         &.active,
+         &.done{
+            color: var(--neutralSoftest);
+         }
+
+         &.active {
+            background: var(--primaryStrong);
+         }
+
+         &.done {
+            background: var(--primaryBase);
+         }
+
+         &:not(.active, .done)[disabled]{
+            background: var(--neutralBase);
+            color: var(--neutralSoftest);
+            cursor: not-allowed;
+         }
+
+         &:before{
+            content: counter(steps);
+            counter-increment: steps;
+         }
+
+         &.done:before{
+            content: '✓';
+         }
+      }
+
+      .separator{
+         background: transparent;
+         height: 2px;
+         width: 100%
+      }
+
+      .done + .separator:has( + .done) { background: var(--primaryStrong); }
+      .done + .separator { background: var(--primaryStronger); }
+
+      /* .separator:has(~ .active) { background: var(--primarySoft); } */
+      /* .separator:has(~ .done) { background: var(--primaryStrong); } */
+   }
+
+   .steps-container{
+      .content{ margin-top: var(--spacing-15); }
+   }
+}
