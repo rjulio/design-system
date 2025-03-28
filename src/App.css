@@ -1,0 +1,11 @@
+body { background: var(--neutralSoft); }
+
+.content {
+  font-family: var(--font-base);
+  display: flex;
+  min-height: 100vh;
+  line-height: 1.1;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}

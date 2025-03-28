@@ -1,0 +1,1 @@
+export type variants = 'primary' | 'secondary' | 'ghost' | 'text' | 'destructive'

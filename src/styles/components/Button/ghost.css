@@ -1,0 +1,33 @@
+.button--ghost {
+   background-color: var(--transparent);
+   border-color: var(--transparent);
+   color: var(--neutralStrong);
+
+   &:hover{
+      background-color: var(--neutralSofter);
+      border-color: var(--neutralSofter);
+      color: var(--neutralStrong);
+      outline: none;
+   }
+
+   &:active{
+      background-color: var(--neutralSoft);
+      border-color: var(--neutralSoft);
+      color: var(--neutralStrong);
+      outline: none;
+   }
+
+   &:focus {
+      outline: 1px solid var(--neutralStrong);
+      border-color: var(--transparent);
+      outline-offset: 2px;
+   }
+
+
+   &[disabled]{
+      background-color: var(--transparent);
+      border-color: var(--transparent);
+      color: var(--neutralSoft);
+      cursor: not-allowed;
+   }
+}

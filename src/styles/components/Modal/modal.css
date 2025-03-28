@@ -1,0 +1,35 @@
+.modalOverlay {
+   align-items: center;
+   display: flex;
+   height: 100vh;
+   justify-content: center;
+   background: var(--neutralSofter);
+   content: '';
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   position: fixed;
+   z-index: 1;
+}
+
+.modalContent{
+   background: var(--neutralSoftest);
+   border-color: transparent;
+   border-radius: var(--border-radius-3);
+   display: flex;
+   flex-direction: column;
+   height: 300px;
+   margin: auto;
+   overflow: hidden;
+   padding: var(--spacing-16);
+   position: relative;
+   width: 500px;
+   z-index: 9999;
+
+   .closeButton{
+      position: absolute;
+      right: 0.5rem;
+      top: 0.5rem;
+   }
+}
