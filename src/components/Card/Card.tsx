@@ -4,15 +4,17 @@ import { CardProps } from './type'
 export function Card({
    children,
    classes = '',
+   ariaLabel,
    ...props
 }: Readonly<CardProps>) {
    return (
       <div
-         { ...props }
+         {...props}
          className={`
             card
             ${classes}
          `}
+         aria-label={ariaLabel || 'Card'}
       >
          {children}
       </div>

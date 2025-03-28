@@ -14,8 +14,21 @@ export function Modal({
       document.body.style.overflow = isOpen ? 'hidden': 'auto'
    }, [isOpen])
 
-   if(!isOpen) return null
+   useEffect(() => {
+      const handleKeyDown = (event: KeyboardEvent) => {
+         if (event.key === 'Escape' && isOpen) {
+            onClose()
+         }
+      }
 
+      document.addEventListener('keydown', handleKeyDown)
+
+      return () => {
+         document.removeEventListener('keydown', handleKeyDown)
+      }
+   }, [isOpen, onClose])
+
+   if(!isOpen) return null
 
    return createPortal(
       <div className="modalOverlay">

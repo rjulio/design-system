@@ -6,5 +6,6 @@ export type ButtonProps = {
    classes?: string
    disabled?: boolean
    size?: string
+   ariaLabel?: string;
    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
 }

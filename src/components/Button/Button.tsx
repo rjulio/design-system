@@ -9,8 +9,14 @@ export function Button({
    variant = 'primary',
    size = 'md',
    onClick,
+   ariaLabel,
    ...props
 }: Readonly<ButtonProps>) {
+
+   if(!ariaLabel) {
+      console.warn('ariaLabel is required for accessibility. Please provide a value for ariaLabel.')
+   }
+
    return (
       <button
          { ...props }
@@ -22,6 +28,7 @@ export function Button({
          onMouseOut={handleMouseOut}
          onBlur={handleBlur}
          onClick={onClick}
+         aria-label={ariaLabel}
       >
          {children}
       </button>
