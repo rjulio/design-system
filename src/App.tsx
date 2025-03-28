@@ -8,6 +8,7 @@ import { Text } from './components/Text';
 import { ButtonGroup } from './components/Button/Group';
 import { Modal } from './components/Modal';
 import { useState } from 'react';
+import { Tooltip } from './components/Tooltip/Tooltip';
 
 const App = () => {
   const { theme, toggleTheme } = useTheme();
@@ -28,7 +29,9 @@ const App = () => {
       </div>
       <div className="columns">
         <div className="column">
-          <Heading level={1}>Rsbuild with React { theme }</Heading>
+          <Tooltip text="This is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltip" position="bottom">
+            <Heading level={1}>Rsbuild with React</Heading>
+          </Tooltip>
           <Text>Start building amazing things with Rsbuild.</Text>
         </div>
       </div>

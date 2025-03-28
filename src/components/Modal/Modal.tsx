@@ -2,16 +2,13 @@ import '@styles/components/Modal/modal.css'
 import { useEffect } from 'react'
 import { Button } from '../Button'
 import { createPortal } from 'react-dom'
+import { ModalProps } from './type'
 
 export function Modal({
    children,
    isOpen,
    onClose
-}: {
-   readonly children: React.ReactNode,
-   readonly isOpen: boolean,
-   readonly onClose: () => void
-}) {
+}: Readonly<ModalProps>) {
 
    useEffect(() => {
       document.body.style.overflow = isOpen ? 'hidden': 'auto'

@@ -1,12 +1,6 @@
 import '@styles/components/Headings/headings.css';
 import React from 'react';
-
-type HeadingProps = {
-   children: React.ReactNode;
-   level?: 1 | 2 | 3 | 4;
-   classes?: string;
-   [key: string]: any;
-};
+import { HeadingProps } from './type';
 
 export function Heading({
    children,
