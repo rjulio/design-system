@@ -37,13 +37,11 @@ const App = () => {
         <div className="column is-full">
           <Card>
             <Heading level={1}>Hello World</Heading>
-            <ButtonGroup>
-              <Button onClick={() => setIsModalOpen(true)}>Open Modal</Button>
-            </ButtonGroup>
+            <Button onClick={() => setIsModalOpen(true)}>Open Modal</Button>
           </Card>
 
           <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-            <Heading level={2}>Modal Title</Heading>
+            <Heading level={3}>Modal Title</Heading>
             <Text>This is the content of the modal.</Text>
           </Modal>
         </div>

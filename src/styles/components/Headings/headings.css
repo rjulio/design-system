@@ -1,5 +1,6 @@
 .heading {
    color: var(--neutralStrongest);
+   font-family: var(--font-base);
    font-weight: var(--font-weight-3);
    line-height: var(--font-line-height-1);
 }

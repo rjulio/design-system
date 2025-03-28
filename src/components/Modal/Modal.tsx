@@ -1,6 +1,7 @@
 import '@styles/components/Modal/modal.css'
 import { useEffect } from 'react'
 import { Button } from '../Button'
+import { createPortal } from 'react-dom'
 
 export function Modal({
    children,
@@ -19,12 +20,13 @@ export function Modal({
    if(!isOpen) return null
 
 
-   return (
+   return createPortal(
       <div className="modalOverlay">
          <div className="modalContent">
             <Button classes="closeButton" variant="text" onClick={onClose}>X</Button>
             { children }
          </div>
-      </div>
+      </div>,
+      document.getElementById('modal-root') as HTMLElement
    )
 }

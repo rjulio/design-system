@@ -11,9 +11,7 @@
    border-radius: var(--border-radius-3);
    cursor: pointer;
    display: flex;
-   font-size: var(--font-size-2);
-   font-weight: var(--font-weight-4);
-   line-height: var(--font-line-height-2);
+   font: var(--font-weight-4) var(--font-size-2)/var(--font-line-height-2) var(--font-base);
    margin: var(--spacing-4);
    outline: none;
 
