@@ -1,4 +1,9 @@
-# Rsbuild project
+# Design System Project
+
+I started this project to have a place where i can practice, learn and improve my react skills.
+
+This project used [Bulma.io](https://bulma.io) as css framework, basically for the grid system.
+All components listed here have their own css, agnostic from Bulma.
 
 ## Setup
 
