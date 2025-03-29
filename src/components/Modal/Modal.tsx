@@ -50,8 +50,8 @@ export function Modal({
          aria-describedby="modal-description"
       >
          <div className="modal__content">
-            { hideCloseButton && (
-               <Button classes="close-button" variant="text" onClick={onClose}>
+            {hideCloseButton && (
+               <Button aria-label="modal close button" classes="close-button" variant="text" onClick={onClose}>
                   X
                </Button>
             )}

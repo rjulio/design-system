@@ -3,4 +3,4 @@ export type ModalProps = {
    readonly isOpen: boolean,
    readonly onClose: () => void
    readonly hideCloseButton?: boolean
-}
+} & React.HTMLAttributes<HTMLDivElement>;

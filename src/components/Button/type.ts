@@ -8,4 +8,4 @@ export type ButtonProps = {
    size?: string
    ariaLabel?: string;
    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
-}
+} & React.ButtonHTMLAttributes<HTMLButtonElement>

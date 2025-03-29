@@ -42,15 +42,15 @@ const App = () => {
         <div className="column text-right">
           Theme:
           <ButtonGroup>
-            <Button size="sm" onClick={() => toggleTheme('light') }>light</Button>
-            <Button size="sm" onClick={() => toggleTheme('dark') } variant="secondary">dark</Button>
+            <Button size="sm" onClick={() => toggleTheme('light')}>light</Button>
+            <Button size="sm" onClick={() => toggleTheme('dark')} variant="secondary">dark</Button>
           </ButtonGroup>
         </div>
       </div>
       <div className="columns">
         <div className="column">
           <Tooltip text="This is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltipThis is a tooltip" position="bottom">
-            <Heading level={1}>Rsbuild with React - { theme }</Heading>
+            <Heading level={1}>Rsbuild with React - {theme}</Heading>
           </Tooltip>
           <Text>Start building amazing things with Rsbuild.</Text>
         </div>
@@ -61,16 +61,16 @@ const App = () => {
           <Wizard
             step={step}
             setStep={setStep}
-            content={ content }
+            content={content}
             canChangeStep={false} />
         </div>
       </div>
 
       <div className="columns is-multiline">
         <div className="column is-full">
-          <Card>
-            <Heading level={1}>Hello World</Heading>
-            <Button onClick={() => setIsModalOpen(true)}>Open Modal</Button>
+          <Card title="teste de title no card">
+            <Heading level={1} title="teste title no heading">Hello World</Heading>
+            <Button title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!" onClick={() => setIsModalOpen(true)}>Open Modal</Button>
           </Card>
 
           <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
@@ -80,9 +80,9 @@ const App = () => {
             <ModalBody>
               <ScrollArea maxHeight='200px'>
                 <Text>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nam corrupti esse amet ad tempora dolore impedit aspernatur, sunt itaque sit molestiae vitae sed architecto recusandae soluta eveniet distinctio nisi!
                 </Text>
               </ScrollArea>
             </ModalBody>
