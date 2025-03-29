@@ -52,4 +52,16 @@ describe('Button', () => {
 
     expect(button).toHaveAttribute('title', 'Click me')
   })
+
+  test('button should accept style from props', () => {
+    const { getByRole } = render(
+      <Button style={{ backgroundColor: 'red' }} ariaLabel="teste">
+        Click me
+      </Button>
+    )
+
+    const button = getByRole('button')
+
+    expect(button).toHaveStyle('background-color: rgb(255, 0, 0)')
+  })
 })
