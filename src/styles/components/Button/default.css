@@ -1,0 +1,23 @@
+@import './primary.css';
+@import './secondary.css';
+@import './ghost.css';
+@import './text.css';
+@import './destructive.css';
+
+.button{
+   align-self: flex-start;
+   border-style: solid;
+   border-width: 1px;
+   border-radius: var(--border-radius-3);
+   cursor: pointer;
+   display: flex;
+   font: var(--font-weight-4) var(--font-size-2)/var(--font-line-height-2) var(--font-base);
+   margin: var(--spacing-4);
+   outline: none;
+
+   &.sm { padding: var(--spacing-5) var(--spacing-16);}
+
+   &.md { padding: var(--spacing-10) var(--spacing-16); }
+
+   &.lg{ padding: var(--spacing-16) var(--spacing-20); }
+}

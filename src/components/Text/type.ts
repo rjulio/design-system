@@ -1,0 +1,1 @@
+export type TextProps = { readonly children: string } & React.HTMLProps<HTMLParagraphElement>

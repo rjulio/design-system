@@ -1,0 +1,33 @@
+[data-theme="dark"] {
+   --primarySofter: #1a2a3f;
+   --primarySoft: #2b4a6a;
+   --primaryBase: #4a90e2;
+   --primaryStrong: #0066cc;
+   --primaryStronger: #003d80;
+
+   --destructiveSofter: #5d1212;
+   --destructiveSoft: #7c2d2d;
+   --destructiveBase: #fba7a7;
+
+   --neutralSoftest: #121212;
+   --neutralSofter: #1c1c1c;
+   --neutralSoft: #474747;
+   --neutralBase: #b9b9b9;
+   --neutralStrong: #d4d4d4;
+   --neutralStronger: #f1f1f1;
+   --neutralStrongest: #ffffff;
+
+   --successSoft: #0b2d1a;
+   --successBase: #7fbf8e;
+
+   --warningSoft: #5a2c00;
+   --warningBase: #ffb874;
+
+   --errorSoft: #4a0e0e;
+   --errorBase: #e98b8b;
+
+   --infoSoft: #002a4d;
+   --infoBase: #7bb8e6;
+
+   --bodyBackgroundBase: #171717;
+}

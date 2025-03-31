@@ -1,0 +1,31 @@
+.button--destructive {
+   background-color: var(--transparent);
+   border-color: var(--transparent);
+   color: var(--destructiveBase);
+
+   &:hover{
+      background-color: var(--destructiveSofter);
+      border-color: var(--destructiveSofter);
+      outline: none;
+   }
+
+   &:active{
+      background-color: var(--destructiveSoft);
+      border-color: var(--destructiveSoft);
+      outline: none;
+   }
+
+   &:focus {
+      outline: 1px solid var(--destructiveBase);
+      border-color: var(--transparent);
+      outline-offset: 2px;
+   }
+
+
+   &[disabled]{
+      background-color: var(--transparent);
+      border-color: var(--transparent);
+      color: var(--neutralSoft);
+      cursor: not-allowed;
+   }
+}

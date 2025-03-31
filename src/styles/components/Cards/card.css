@@ -1,0 +1,7 @@
+.card {
+   background: var(--neutralSofter);
+   border-radius: var(--border-radius-4);
+   border: solid 1px var(--neutralSoft);
+   padding: var(--spacing-8);
+   width: 100%;
+}

@@ -1,0 +1,31 @@
+.button--text {
+   background-color: var(--transparent);
+   border-color: var(--transparent);
+   color: var(--primaryBase);
+
+   &:hover{
+      background-color: var(--primarySofter);
+      border-color: var(--primarySofter);
+      outline: none;
+   }
+
+   &:active{
+      background-color: var(--primarySoft);
+      border-color: var(--neutralSoft);
+      outline: none;
+   }
+
+   &:focus {
+      outline: 1px solid var(--primarbyBase);
+      border-color: var(--transparent);
+      outline-offset: 2px;
+   }
+
+
+   &[disabled]{
+      background-color: var(--transparent);
+      border-color: var(--transparent);
+      color: var(--neutralSoft);
+      cursor: not-allowed;
+   }
+}

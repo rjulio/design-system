@@ -1,0 +1,13 @@
+:root{
+   --border-radius-0: 0;
+   --border-radius-1: 4px;
+   --border-radius-2: 6px;
+   --border-radius-3: 8px;
+   --border-radius-4: 12px;
+   --border-radius-5: 16px;
+   --border-radius-6: 24px;
+   --border-radius-7: 32px;
+   --border-radius-8: 48px;
+   --border-radius-9: 64px;
+   --border-radius-full: 9999px;
+}

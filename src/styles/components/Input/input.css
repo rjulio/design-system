@@ -1,0 +1,88 @@
+.input-group {
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-8);
+   margin: var(--spacing-4) var(--spacing-4);
+
+   .input-group__label {
+      color: var(--neutralStrongest);
+      font: var(--font-weight-3) var(--font-size-2)/var(--font-line-height-1) var(--font-base);
+   }
+
+   .input-group__input {
+      background-color: var(--neutralSoftest);
+      border: solid 1px var(--neutralBase);
+      border-radius: var(--border-radius-2);
+      color: var(--neutralStrongest);
+      font: var(--font-weight-3) var(--font-size-2)/var(--font-line-height-2) var(--font-base);
+      padding: 0.5rem;
+
+      &:hover:not(:focus) {
+         border-color: var(--neutralStrong);
+      }
+
+      &:focus {
+         outline: solid 1px var(--primaryBase);
+         outline-offset: 3px;
+         border-color: var(--primaryBase);
+         box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+      }
+
+
+      &::placeholder {
+         color: var(--neutralBase);
+         font: var(--font-weight-2) var(--font-size-1)/var(--font-line-height-1) var(--font-base);
+      }
+   }
+
+   &[data-disabled="true"] {
+      .input-group__input {
+         background-color: var(--neutralSoftest);
+         border-color: var(--neutralBase);
+         color: var(--neutralBase);
+         cursor: not-allowed;
+      }
+
+      .input-group__label {
+         color: var(--neutralBase);
+      }
+
+      .input-group__input::placeholder {
+         color: var(--neutralBase);
+      }
+
+      .input-group__input:hover {
+         border-color: var(--neutralBase);
+      }
+
+      .input-group__input:focus {
+         outline: none;
+         box-shadow: none;
+      }
+   }
+
+   &[data-required="true"] {
+      .input-group__label::after {
+         content: "*";
+         color: var(--errorBase);
+         margin-left: 0.25rem;
+      }
+   }
+
+   &[data-invalid="true"] {
+      .input-group__input {
+         border-color: var(--errorBase);
+         box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.25);
+      }
+
+      .input-group__label {
+         color: var(--errorBase);
+      }
+   }
+
+   .input-group-error {
+      color: var(--errorBase);
+      font: var(--font-weight-2) var(--font-size-1)/var(--font-line-height-1) var(--font-base);
+      margin-top: 0.25rem;
+   }
+}

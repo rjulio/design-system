@@ -1,0 +1,32 @@
+.button--secondary {
+   background-color: var(--transparent);
+   border-color: var(--primaryBase);
+   color: var(--primaryBase);
+
+   &:focus {
+      outline: 1px solid var(--primaryBase);
+      border-color: var(--primaryBase);
+      outline-offset: 2px;
+   }
+
+   &:hover{
+      background-color: var(--primaryStrong);
+      border-color: var(--primaryStrong);
+      color: var(--neutralSoftest);
+      outline: none;
+   }
+
+   &:active{
+      background-color: var(--primaryStronger);
+      border-color: var(--primaryStronger);
+      color: var(--neutralSoftest);
+      outline: none;
+   }
+
+   &[disabled]{
+      background-color: var(--transparent);
+      border-color: var(--neutralSoft);
+      color: var(--neutralSoftest);
+      cursor: not-allowed;
+   }
+}

@@ -1,0 +1,6 @@
+@import './config/vendor.css';
+@import './config/reset.css';
+@import './config/fonts.css';
+@import './config/colors.css';
+@import './config/spacings.css';
+@import './config/border.css';

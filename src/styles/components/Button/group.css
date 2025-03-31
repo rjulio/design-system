@@ -1,0 +1,10 @@
+.button-group{
+   align-items: flex-start;
+   border-radius: var(--border-radius-4);
+   border: solid 1px var(--primaryBase);
+   display: inline-flex;
+   gap: var(--spacing-0);
+   justify-content: flex-start;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+}

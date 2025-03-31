@@ -1,0 +1,6 @@
+body { background: var(--neutralSoft); }
+
+.container {
+  font-family: var(--font-base);
+  min-height: 100vh;
+}
