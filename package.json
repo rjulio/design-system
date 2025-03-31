@@ -11,8 +11,8 @@
     "clean": "rm -rf node_modules && pnpm store prune && pnpm cache clean"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@rsbuild/core": "^1.2.16",
@@ -29,7 +29,7 @@
     "vitest": "^3.0.9"
   },
   "exports": {
-    "./Components/*": "./src/components/*/index.ts",
-    "./Styles/*": "./src/styles/*"
+    "./components/*": "./src/components/*/index.ts",
+    "./styles/*": "./src/styles/*"
   }
 }
